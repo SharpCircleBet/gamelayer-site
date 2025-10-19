@@ -257,8 +257,15 @@ export default function SharpCirclePage() {
                 "SharpCircle provides transparency in a community largely consumed by fake records and engagement bait. When placing bets, it gives me peace of mind to know their plays & records aren't falsified or altered in any way." — Ian Brown, SharpCircle User
               </blockquote>
             </div>
-            <div className="bg-slate-100 rounded-2xl aspect-square flex items-center justify-center text-slate-400">
-              Creator dashboard mockup
+            <div className="relative group cursor-pointer" onClick={() => setEnlargedImage("/images/dashboard.jpg")}>
+              <img 
+                src="/images/dashboard.jpg" 
+                alt="Creator Dashboard" 
+                className="rounded-2xl aspect-square object-cover w-full group-hover:opacity-90 transition shadow-xl" 
+              />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                <span className="text-gray-300 text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">Click to enlarge</span>
+              </div>
             </div>
           </div>
         </div>
@@ -445,7 +452,8 @@ export default function SharpCirclePage() {
           <div className="text-center mb-8">
             <p className="text-sm">Powered by GameLayer, the infrastructure for verified sports engagement.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-2
+          md:grid-cols-4 gap-8 mb-8">
             <div>
               <h4 className="text-white font-semibold mb-4">Products</h4>
               <ul className="space-y-2 text-sm">
