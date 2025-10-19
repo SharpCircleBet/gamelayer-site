@@ -2,6 +2,12 @@
 
 import { useState } from "react";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SharpCircle"
+};
+
 export default function SharpCirclePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
