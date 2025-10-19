@@ -13,13 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    template: "GameLayer - %s",
-    default: "GameLayer - Home",
-  },
-  description: "GameLayer - Powering the future of fan engagement",
+  title: "GameLayer - Powering Fan Engagement",
+  description: "GameLayer - Powering the future of fan engagement through innovative B2B solutions and SharpCircle",
   icons: {
-    icon: "/images/GameLayerLogoFull2.png",
+    icon: "/favicon.ico",
   },
 };
 

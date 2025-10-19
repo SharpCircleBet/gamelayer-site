@@ -2,11 +2,6 @@
 
 import { useState } from "react";
 
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Investors"
-};
 
 export default function InvestorsPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

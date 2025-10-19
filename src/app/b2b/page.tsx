@@ -2,11 +2,6 @@
 
 import { useState } from "react";
 
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "B2B Solutions"
-};
 
 export default function B2BProductPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

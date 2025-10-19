@@ -1,11 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "About Us", // This will show as "GameLayer - About Us"
-};
 
 export default function AboutPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
